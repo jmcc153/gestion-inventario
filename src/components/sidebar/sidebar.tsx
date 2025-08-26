@@ -53,6 +53,11 @@ const items = [
         url: "/admin/roles",
       },
       {
+        icon: BookLock,
+        title: "Categorias",
+        url: "/admin/categories",
+      },
+      {
         icon: Package2,
         title:"Inventario",
         url: "/admin/inventory",
@@ -77,12 +82,6 @@ const items = [
     ],
   },
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
-    childrens: [],
-  },
-  {
     title: "Settings",
     url: "#",
     icon: Settings,
@@ -94,7 +93,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar {...props}>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>Logo</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) =>

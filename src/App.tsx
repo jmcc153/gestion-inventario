@@ -11,7 +11,7 @@ function App() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <SidebarProvider  open={open} onOpenChange={setOpen}>
+      <SidebarProvider open={open} onOpenChange={setOpen}>
         <AppSidebar collapsible="icon" />
         <SidebarInset>
           <Navbar />

@@ -1,5 +1,7 @@
 import { usersColumns } from "@/components/dataTable/columns";
 import { DataTable } from "@/components/dataTable/dataTable";
+import { Button } from "@/components/ui/button";
+import { ModalUsers } from "@/components/users/modalUsers";
 import type { Users as UsersType } from "@/types/users";
 
 export const Users = () => {
@@ -24,7 +26,10 @@ export const Users = () => {
     },
   ];
   return (
-    <div className="container mx-auto">
+    <div>
+      <div className="flex justify-end py-2">
+        <ModalUsers />
+      </div>
       <DataTable columns={usersColumns} data={data} />
     </div>
   );
